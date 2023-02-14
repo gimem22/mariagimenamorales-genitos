@@ -1,0 +1,69 @@
+/*-----HEADER-----*/
+
+.encabezado {
+    nav {
+        background: $color-fondoHeaderFooter;
+
+        div {
+            a {
+                img {
+                    width: 180px;
+                    height: 180px;
+                }
+            }
+
+            button {
+                span {}
+            }
+
+            div {
+                ul {
+                    li {
+                        a {}
+                    }
+
+                    li {
+                        a {}
+
+                        ul {
+                            li {
+                                a {}
+                            }
+
+                            li {
+                                hr {}
+                            }
+
+                            li {
+                                a {}
+                            }
+                        }
+                    }
+
+                    li {
+                        a {}
+                    }
+
+                    li {
+                        a {}
+                    }
+                }
+
+                form {
+                    input {
+                    }
+
+                    .boton {
+                        border: 1px solid $color-bordesBotones;
+                        color: $color-bordesBotones;
+                        transition: 1s;
+                        &:hover {
+                            background-color: $color-bordesBotones;
+                            color: $color-fondoBotones;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+.pie{
+    background: $color-fondoHeaderFooter;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    div{
+        padding: 15px;
+        h3{
+            font-size: 25px;
+            font-weight: 60px;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        p{
+            font-size: 15px;
+            text-align: left;
+        }
+    }
+    div{
+        h3{
+
+        }
+        iframe{
+            width: 160px;
+            height: 85px;
+            text-align: center;
+        }
+
+    }
+    div{
+        h3{
+
+        }
+        a{
+            img{
+                width: 80px;
+                height: 80px;
+                text-align: start;
+                transition: 2s;
+                &:hover{
+                    transform: scale(1.15);
+                }
+            }
+
+        }
+    }
+}
