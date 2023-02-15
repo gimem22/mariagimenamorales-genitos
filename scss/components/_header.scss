@@ -1,70 +1,39 @@
 /*-----HEADER-----*/
 
-.encabezado {
-    nav {
+.encabezado{
+    nav{
         background: $color-fondoHeaderFooterUno;
         background: $color-fondoHeaderFooterDos;
-
-        div {
-            a {
-                img {
+        div{
+            a{
+                padding-right: 80px;
+                img{
                     width: 180px;
                     height: 180px;
                 }
             }
-
-            button {
-                span {}
-            }
-
-            div {
-                ul {
-                    li {
-                        a {}
-                    }
-
-                    li {
-                        a {}
-
-                        ul {
-                            li {
-                                a {}
-                            }
-
-                            li {
-                                hr {}
-                            }
-
-                            li {
-                                a {}
-                            }
+            div{
+                ul{
+                    li{
+                        a{
+                            font-size: 10x; 
+                            color: $color-subtitulos;
+                            padding: 10px;
                         }
                     }
-
-                    li {
-                        a {}
-                    }
-
-                    li {
-                        a {}
-                    }
                 }
-
-                form {
-                    input {
-                    }
-
-                    .boton {
+            }
+                form{
+                    .boton{
                         border: 1px solid $color-bordesBotones;
                         color: $color-bordesBotones;
                         transition: 1s;
-                        &:hover {
+                        &:hover{
                             background-color: $color-bordesBotones;
-                            color: $color-fondoBotones;
+                            color: $color-textoBotones;
                         }
                     }
                 }
             }
-        }
+        } 
     }
-}

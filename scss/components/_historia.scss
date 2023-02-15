@@ -1,0 +1,26 @@
+.historia{
+    width: 100%;
+    background: $color-transpHistoria, url("../img/bannerUno.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    h2{
+        color: $color-subtitulos;
+        background-color: $color-fondoSubtitulos;
+        font-size: 60px;
+        font-weight: 150px;
+        text-align: center;
+        padding: 50px;
+    }
+    p{
+        color: $color-bordesBotones;
+        font-size: 35px;
+        text-align: center;
+        padding: 100px;
+        padding-bottom: 200px;
+    }
+}

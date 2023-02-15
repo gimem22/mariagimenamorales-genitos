@@ -13,16 +13,22 @@ body {
 .encabezado nav {
   background: white;
   background: linear-gradient(90deg, white 8%, rgba(232, 204, 230, 0.995024) 100%); }
-  .encabezado nav div a img {
-    width: 180px;
-    height: 180px; }
-  .encabezado nav div div form .boton {
+  .encabezado nav div a {
+    padding-right: 80px; }
+    .encabezado nav div a img {
+      width: 180px;
+      height: 180px; }
+  .encabezado nav div div ul li a {
+    font-size: 10x;
+    color: #9b771b;
+    padding: 10px; }
+  .encabezado nav div form .boton {
     border: 1px solid #482c17;
     color: #482c17;
     transition: 1s; }
-    .encabezado nav div div form .boton:hover {
+    .encabezado nav div form .boton:hover {
       background-color: #482c17;
-      color: #633a57; }
+      color: beige; }
 
 .principal .bienvenida {
   width: 100%;
@@ -41,7 +47,7 @@ body {
     font-size: 120px;
     color: #9b771b;
     text-shadow: 0 0 4px #482c17;
-    padding: 50px; }
+    padding: 20px; }
   .principal .bienvenida p {
     font-size: 40px;
     color: #482c17; }
@@ -187,34 +193,7 @@ body {
     background-color: #633a57;
     color: beige; }
 
-.principal .contacto h2 {
-  color: #9b771b;
-  background-color: #d2bfa4;
-  font-size: 60px;
-  font-weight: 150px;
-  text-align: center;
-  padding: 20px; }
-
-.principal .contacto form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; }
-  .principal .contacto form div {
-    font-size: 30px;
-    font-weight: 30px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding: 15px;
-    text-align: center; }
-    .principal .contacto form div input {
-      width: 500px;
-      height: 40px; }
-  .principal .contacto form div textarea {
-    width: 700px;
-    height: 70px; }
-
-.principal .historia h2 {
+.tienda h2 {
   color: #9b771b;
   background-color: #d2bfa4;
   font-size: 60px;
@@ -222,46 +201,91 @@ body {
   text-align: center;
   padding: 50px; }
 
-.principal .historia p {
-  color: #482c17;
-  font-size: 35px;
-  text-align: center;
-  padding: 100px;
-  padding-bottom: 200px; }
-
-.principal .tienda h2 {
-  color: #9b771b;
-  background-color: #d2bfa4;
-  font-size: 60px;
-  font-weight: 150px;
-  text-align: center;
-  padding: 50px; }
-
-.principal .tienda .productostienda {
+.tienda .productosTienda {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap; }
-  .principal .tienda .productostienda div {
+  .tienda .productosTienda div {
     border: 2px solid #482c17;
     width: 250px;
     height: 350px;
     margin: 30px;
     text-align: center;
     transition: 3s; }
-    .principal .tienda .productostienda div:hover {
+    .tienda .productosTienda div:hover {
       transform: scale(1.3); }
-    .principal .tienda .productostienda div img {
+    .tienda .productosTienda div img {
       width: 250px;
       height: 250px; }
-    .principal .tienda .productostienda div h3 {
+    .tienda .productosTienda div h3 {
       font-size: 20px;
       margin: 15px; }
-    .principal .tienda .productostienda div a {
+    .tienda .productosTienda div a {
       text-decoration: none;
       color: beige;
       font-weight: bold;
       background-color: #633a57;
       padding: 5px 10px; }
+
+.historia {
+  width: 100%;
+  background: linear-gradient(90deg, rgba(210, 189, 164, 0.591334) 8%, rgba(161, 137, 102, 0.395255) 97%), url("../img/bannerUno.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center; }
+  .historia h2 {
+    color: #9b771b;
+    background-color: #d2bfa4;
+    font-size: 60px;
+    font-weight: 150px;
+    text-align: center;
+    padding: 50px; }
+  .historia p {
+    color: #482c17;
+    font-size: 35px;
+    text-align: center;
+    padding: 100px;
+    padding-bottom: 200px; }
+
+.contacto {
+  width: 100%;
+  background: linear-gradient(90deg, rgba(210, 189, 164, 0.591334) 8%, rgba(161, 137, 102, 0.395255) 97%), url("../img/bannerDos.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center; }
+  .contacto h2 {
+    color: #9b771b;
+    background-color: #d2bfa4;
+    font-size: 60px;
+    font-weight: 150px;
+    text-align: center;
+    padding: 20px; }
+  .contacto form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .contacto form div {
+      font-size: 30px;
+      font-weight: 30px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      padding: 15px;
+      text-align: center; }
+      .contacto form div input {
+        width: 500px;
+        height: 40px; }
+    .contacto form div textarea {
+      width: 700px;
+      height: 70px; }
 
 .pie {
   background: white;
@@ -306,12 +330,12 @@ body {
   .pie div a img {
     width: 60px;
     height: 60px; }
-  .principal .contacto form div {
+  .contacto form div {
     font-size: 20px; }
-  .principal .contacto form div input {
+  .contacto form div input {
     width: 400px;
     height: 40px; }
-  .principal .contacto form div textarea {
+  .contacto form div textarea {
     width: 550px;
     height: 60px; } }
 
@@ -329,7 +353,7 @@ body {
   .principal .bienvenida h1 {
     font-size: 90px;
     text-shadow: 0 0 3px; }
-  .principal .contacto form div textarea {
+  .contacto form div textarea {
     width: 500px; } }
 
 @media screen and (max-width: 700px) {
@@ -339,26 +363,26 @@ body {
     font-size: 45px; }
   .principal .categorias p {
     font-size: 20px; }
-  .pagos {
+  .principal.pagos {
     font-size: 45px; }
   .principal .pagos p {
     font-size: 20px; }
-  .principal .contacto h2 {
+  .contacto h2 {
     font-size: 45px; }
-  .principal .historia h2 {
+  .historia h2 {
     font-size: 45px; }
-  .principal .historia p {
+  .historia p {
     font-size: 20px; }
-  .principal .tienda h2 {
+  .tienda h2 {
     font-size: 45px; } }
 
 @media screen and (max-width: 600px) {
-  .principal .contacto form div {
+  .contacto form div {
     font-size: 15px; }
-  .principal .contacto form div input {
+  .contacto form div input {
     width: 300px;
     height: 30px; }
-  .principal .contacto form div textarea {
+  .contacto form div textarea {
     width: 350px; } }
 
 @media screen and (max-width: 580px) {
@@ -379,11 +403,11 @@ body {
     font-size: 30px; }
   .principal .pagos h2 {
     font-size: 30px; }
-  .principal .historia h2 {
+  .historia h2 {
     font-size: 30px; }
-  .principal .contacto h2 {
+  .contacto h2 {
     font-size: 30px; }
-  .principal .tienda h2 {
+  .tienda h2 {
     font-size: 30px; } }
 
 @media screen and (max-width: 400px) {
@@ -392,8 +416,8 @@ body {
     text-shadow: 0 0 2px; }
   .principal .galeria .grid-galeria {
     grid-template-columns: 1fr; }
-  .principal .contacto form div input {
+  .contacto form div input {
     width: 150px;
     height: 20px; }
-  .principal .contacto form div textarea {
+  .contacto form div textarea {
     width: 250px; } }

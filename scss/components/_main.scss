@@ -17,7 +17,7 @@
             font-size: 120px;
             color: $color-subtitulos;
             text-shadow: 0 0 4px $color-bordesBotones;
-            padding: 50px;
+            padding: 20px;
         }
 
         p {
@@ -202,106 +202,6 @@
             &:hover{
                 background-color:$color-fondoBotones;
                 color: $color-textoBotones;
-            }
-        }
-
-    }
-    .contacto {
-        
-        h2{
-            color: $color-subtitulos;
-            background-color: $color-fondoSubtitulos;
-            font-size: 60px;
-            font-weight: 150px;
-            text-align: center;
-            padding: 20px;
-        }
-        form{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            div{
-                font-size: 30px;
-                font-weight: 30px;
-                margin-top: 5px;
-                margin-bottom: 5px;
-                padding: 15px;
-                text-align: center;
-                label{
-
-                }
-                input{
-                    width: 500px;
-                    height: 40px;
-                }
-            }
-            div{
-                h3{
-
-                }
-                textarea{
-                    width: 700px;
-                    height: 70px
-                }
-            }
-        }
-    }
-    .historia{
-        h2{
-            color: $color-subtitulos;
-            background-color: $color-fondoSubtitulos;
-            font-size: 60px;
-            font-weight: 150px;
-            text-align: center;
-            padding: 50px;
-        }
-        p{
-            color: $color-bordesBotones;
-            font-size: 35px;
-            text-align: center;
-            padding: 100px;
-            padding-bottom: 200px;
-        }
-    }
-    .tienda{
-        h2{
-            color: $color-subtitulos;
-            background-color: $color-fondoSubtitulos;
-            font-size: 60px;
-            font-weight: 150px;
-            text-align: center;
-            padding: 50px;
-        }   
-        .productostienda{
-            display: flex;
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-            div{
-                border: 2px solid $color-bordesBotones;
-                width: 250px;
-                height: 350px;
-                margin: 30px;
-                text-align: center;
-                transition: 3s;
-                &:hover{
-                    transform: scale(1.3);
-                }
-                img{
-                    width: 250px;
-                    height: 250px;
-                }
-                h3{
-                    font-size: 20px;
-                    margin: 15px;
-                }
-                a{
-                    text-decoration: none;
-                    color: $color-textoBotones;
-                    font-weight: bold;
-                    background-color: $color-fondoBotones;
-                    padding: 5px 10px;
-                }
             }
         }
     }

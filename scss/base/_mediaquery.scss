@@ -20,16 +20,16 @@
         height: 60px;
     }
 
-    .principal .contacto form div {
+    .contacto form div {
         font-size: 20px;
     }
 
-    .principal .contacto form div input {
+    .contacto form div input {
         width: 400px;
         height: 40px;
     }
 
-    .principal .contacto form div textarea {
+    .contacto form div textarea {
         width: 550px;
         height: 60px;
     }
@@ -57,7 +57,7 @@
         text-shadow: 0 0 3px;
     }
 
-    .principal .contacto form div textarea {
+    .contacto form div textarea {
         width: 500px;
     }
 }
@@ -75,7 +75,7 @@
         font-size: 20px;
     }
 
-    .pagos {
+    .principal.pagos {
         font-size: 45px;
     }
 
@@ -83,34 +83,34 @@
         font-size: 20px;
     }
 
-    .principal .contacto h2 {
+    .contacto h2 {
         font-size: 45px;
     }
 
-    .principal .historia h2 {
+    .historia h2 {
         font-size: 45px;
     }
 
-    .principal .historia p {
+    .historia p {
         font-size: 20px;
     }
 
-    .principal .tienda h2 {
+    .tienda h2 {
         font-size: 45px;
     }
 }
 
 @media screen and (max-width:600px) {
-    .principal .contacto form div {
+    .contacto form div {
         font-size: 15px;
     }
 
-    .principal .contacto form div input {
+    .contacto form div input {
         width: 300px;
         height: 30px;
     }
 
-    .principal .contacto form div textarea {
+    .contacto form div textarea {
         width: 350px;
     }
 }
@@ -148,15 +148,15 @@
         font-size: 30px;
     }
 
-    .principal .historia h2 {
+    .historia h2 {
         font-size: 30px;
     }
 
-    .principal .contacto h2{
+    .contacto h2{
         font-size: 30px;
     }
 
-    .principal .tienda h2 {
+    .tienda h2 {
         font-size: 30px;
     }
 }
@@ -171,12 +171,12 @@
         grid-template-columns: 1fr;
     }
 
-    .principal .contacto form div input {
+    .contacto form div input {
         width: 150px;
         height: 20px;
     }
 
-    .principal .contacto form div textarea {
+    .contacto form div textarea {
         width: 250px;
     }
 }
