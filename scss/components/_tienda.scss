@@ -1,13 +1,8 @@
 .tienda{
     width: nth($width, 16);
     background: nth($gradientes, 4), url("../img/bannerTres.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    text-align: center;
+    @include bgDos (no-repeat, cover, fixed);
+    @extend %flex3;
     h2{
         color: nth($colores, 1);
         text-shadow: 0 0 4px nth($colores, 3);
@@ -17,9 +12,8 @@
         padding: nth($padding, 6);
     }   
     .productosTienda{
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
+        @include flex (flex, space-evenly, wrap);
+        
         div{
             border: 2px solid nth($colores, 3);
             width: nth($width, 9);

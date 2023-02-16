@@ -1,13 +1,8 @@
 .historia{
     width: nth($width, 16);
     background: nth($gradientes, 4), url("../img/bannerTres.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    text-align: center;
+    @include bgDos (no-repeat, cover, fixed);
+    @extend %flex3;
     h2{
         color: nth($colores, 1);
         text-shadow: 0 0 4px nth($colores, 3);
@@ -18,9 +13,9 @@
     }
     p{
         color: nth($colores, 3);
-        font-size: nth($font-size, 6); 
+        font-size: nth($font-size, 4); 
         text-align: center;
-        padding: nth($padding, 8);
-        padding-bottom: nth($padding, 11);
+        padding: nth($padding, 5);
+        padding-bottom: nth($padding, 9);
     }
 }

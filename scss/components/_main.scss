@@ -3,15 +3,8 @@
         width: nth($width, 16);
         height: calc(100vh - 180px);
         background: nth($gradientes, 3), url("../img/tazaCafe.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        text-align: center;
+        @include bg (center, no-repeat, cover, fixed);
+        @extend %flex;
 
         h1 {
             font-size: nth($font-size, 12); 

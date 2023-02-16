@@ -107,5 +107,53 @@ $height:
 /*10*/180px,
 /*11*/250px,
 /*12*/350px,
-/*13*/100%
+/*13*/100%;
 
+
+//*EXTENDS
+
+// % PLACEHOLDER
+
+%flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+%flex2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+%flex3{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+//* MIXINS
+
+@mixin flex ($flex, $justify, $wrap){
+    display: $flex;
+    justify-content: $justify;
+    flex-wrap: $wrap;
+}
+
+@mixin bg ($position, $repeat, $size, $attachment){
+    background-position: $position;
+    background-repeat: $repeat;
+    background-size: $size;
+    background-attachment: $attachment; 
+}
+
+@mixin bgDos ($repeat, $size, $attachment){
+    background-repeat: $repeat;
+    background-size: $size;
+    background-attachment: $attachment; 
+}

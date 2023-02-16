@@ -1,35 +1,29 @@
 .contacto {
     width: nth($width, 16);
     background: nth($gradientes, 4), url("../img/bannerTres.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    text-align: center;
+    @include bgDos (no-repeat, cover, fixed);
+    @extend %flex3;
     h2{
         color: nth($colores, 1);
         text-shadow: 0 0 4px nth($colores, 3);
         font-size: nth($font-size, 11);
         font-weight: nth($font-weight, 4);
         text-align: center;
-        padding: nth($padding, 7);
+        padding: nth($padding, 6);
     }
     form{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        @extend %flex2;
+    }
+        
         div{
-            font-size: nth($font-size, 11);
+            font-size: nth($font-size, 3);
             font-weight: nth($font-weight, 1);
             margin-top: nth($margin, 1);
             margin-bottom: nth($margin, 1);
             padding: nth($padding, 3);
             text-align: center;
             input{
-                width: nth($width, 13);
+                width: nth($width, 12);
                 height: nth($height, 3);
             }
         }
@@ -40,4 +34,3 @@
             }
         }
     }
-}
