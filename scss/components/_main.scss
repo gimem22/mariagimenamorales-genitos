@@ -1,8 +1,8 @@
 .principal {
     .bienvenida {
-        width: 100%;
+        width: nth($width, 16);
         height: calc(100vh - 180px);
-        background: $color-transpBienvenida, url("../img/tazaCafe.jpg");
+        background: nth($gradientes, 3), url("../img/tazaCafe.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -14,26 +14,26 @@
         text-align: center;
 
         h1 {
-            font-size: 120px;
-            color: $color-subtitulos;
-            text-shadow: 0 0 4px $color-bordesBotones;
-            padding: 20px;
+            font-size: nth($font-size, 12); 
+            color: nth($colores, 1);
+            text-shadow: 0 0 4px nth($colores, 3);
+            padding: nth($padding, 4);
         }
 
         p {
-            font-size: 40px;
-            color: $color-bordesBotones;
+            font-size: nth($font-size, 7); 
+            color: nth($colores, 3);
         }
     }
     .galeria {
 
         h2 {
-            font-size: 60px;
-            font-weight: 150px;
-            color: $color-subtitulos;
-            background-color: $color-fondoSubtitulos;
+            font-size: nth($font-size, 9); 
+            font-weight: nth($font-weight, 4);
+            color: nth($colores, 1);
+            background-color: nth($colores, 2);
             text-align: center;
-            padding: 50px;
+            padding: nth($padding, 7);
         }
 
         .grid-galeria {
@@ -41,16 +41,16 @@
             grid-template-columns: repeat(3, 1fr);
             grid-auto-rows: 300px;
             gap: 15px;
-            padding: 15px;
+            padding: nth($padding, 3);
 
             .grid-item {
                 img {
-                    width: 100%;
-                    height: 100%;
+                    width: nth($width, 16);
+                    height: nth($height, 13);
                     object-fit: cover;
-                    box-shadow: 11px 7px 30px -3px $color-fondoImagenes;
-                    -webkit-box-shadow: 11px 7px 30px -3px $color-fondoImagenes;
-                    -moz-box-shadow: 11px 7px 30px -3px $color-fondoImagenes;
+                    box-shadow: 11px 7px 30px -3px nth($colores, 7);
+                    -webkit-box-shadow: 11px 7px 30px -3px nth($colores, 7);
+                    -moz-box-shadow: 11px 7px 30px -3px nth($colores, 7);
                 }
             }
             .img-2 {
@@ -76,35 +76,35 @@
 
         a {
             text-decoration: none;
-            font-size: 20px;
-            border: 1px solid $color-bordesBotones;
-            color: $color-bordesBotones;
-            margin: 20px;
-            padding-bottom: 10px;
-            padding: 5px;
+            font-size: nth($font-size, 3); 
+            border: 1px solid nth($colores, 3);
+            color: nth($colores, 3);
+            margin: nth($margin, 3);
+            padding-bottom: nth($padding, 2);
+            padding: nth($padding, 1);
             transition: 3s;
             &:hover{
-                background-color:$color-fondoBotones;
-                color: $color-textoBotones;
+                background-color:nth($colores, 5);
+                color: nth($colores, 4);
             }
         }
     }
     .categorias {
         h2 {
-            color: $color-subtitulos;
-            background-color: $color-fondoSubtitulos;
-            font-size: 60px;
-            font-weight: 150px;
+            color: nth($colores, 1);
+            background-color: nth($colores, 2);
+            font-size: nth($font-size, 9); 
+            font-weight: nth($font-weight, 4);
             text-align: center;
-            padding: 30px;
+            padding: nth($padding, 5);
         }
 
         p {
-            color: $color-bordesBotones;
-            font-size: 30px;
-            font-weight: 50px;
+            color: nth($colores, 3);
+            font-size: nth($font-size, 5); 
+            font-weight: nth($font-weight, 2);
             text-align: center;
-            padding: 30px;
+            padding: nth($padding, 5);
         }
 
         .catTipos {
@@ -112,70 +112,73 @@
             justify-content: space-evenly;
             flex-wrap: wrap;
             div {
-                border: 2px solid $color-bordesBotones;
-                width: 200px;
-                height: 250px;
-                margin: 40px;
-                padding: 10px;
+                border: 2px solid nth($colores, 3);
+                width: nth($width, 8);
+                height: nth($height, 11);
+                margin: nth($margin, 6);
+                padding: nth($padding, 2);
                 text-align: center;
                 img {
-                    width: 150px;
-                    height: 150px;
+                    width: nth($width, 5);
+                    height: nth($height, 9);
                     transition-property: width;
                     transition-duration: 2s;
                     transition-timing-function: ease;
                     &:hover{
-                        width: 180px;
+                        width: nth($width, 7);
                     }
                 }
 
                 h3 {
-                    font-size: 15px;
-                    margin: 15px;
+                    font-size: nth($font-size, 2); 
+                    margin: nth($margin, 2);
                 }
 
                 a {
                     text-decoration: none;
-                    font-size: 12px;
-                    color: $color-textoBotones;
-                    font-weight: bold;
-                    background-color: $color-fondoBotones;
-                    padding: 5px 10px;
+                    font-size: nth($font-size, 1); 
+                    color: nth($colores, 4);
+                    font-weight: nth($font-weight, 5);
+                    background-color: nth($colores, 5);
+                    padding-top: nth($padding, 1);
+                    padding-bottom: nth($padding, 1);
+                    padding-left: nth($padding, 2);
+                    padding-right: nth($padding, 2);
                 }
             }
         }
 
         a {
             text-decoration: none;
-            font-size: 20px;
-            border: 1px solid $color-bordesBotones;
-            color: $color-bordesBotones;
-            margin: 20px;
-            padding-bottom: 10px;
-            padding: 5px;
+            font-size: nth($font-size, 3); 
+            border: 1px solid nth($colores, 3);
+            color: nth($colores, 3);
+            margin: nth($margin, 3);
+            padding-bottom: nth($padding, 2);
+            padding: nth($padding, 1);
             transition: 3s;
             &:hover{
-                background-color:$color-fondoBotones;
-                color: $color-textoBotones;
+                background-color:nth($colores, 5);
+                color: nth($colores, 4);
             }
         }
     }
     .pagos {
         h2 {
-            color: $color-subtitulos;
-            background-color: $color-fondoSubtitulos;
-            font-size: 60px;
-            font-weight: 150px;
+            color: nth($colores, 1);
+            background-color: nth($colores, 2);
+            font-size: nth($font-size, 9); 
+            font-weight: nth($font-weight, 4);
             text-align: center;
-            padding: 30px;
+            padding: nth($padding, 5);
         }
 
         p {
-            color: $color-bordesBotones;
-            font-size: 30px;
-            font-weight: 50px;
+            color: nth($colores, 3);
+            font-size: nth($font-size, 5); 
+            font-weight: nth($font-weight, 2);
             text-align: center;
-            padding: 30px;
+            padding: nth($padding, 5);
         }
 
         div {
@@ -184,24 +187,24 @@
             align-items: center;
             flex-wrap: wrap;
             img {
-                width: 150px;
-                height: 150px;
-                margin: 25px;
+                width: nth($width, 5);
+                height: nth($height, 9);
+                margin: nth($margin, 4);
             }
         }
 
         a {
             text-decoration: none;
-            font-size: 20px;
-            border: 1px solid $color-bordesBotones;
-            color: $color-bordesBotones;
-            margin: 20px;
-            padding-bottom: 10px;
-            padding: 5px;
+            font-size: nth($font-size, 3); 
+            border: 1px solid nth($colores, 3);
+            color: nth($colores, 3);
+            margin: nth($margin, 3);
+            padding-bottom: nth($padding, 2);
+            padding: nth($padding, 1);
             transition: 3s;
             &:hover{
-                background-color:$color-fondoBotones;
-                color: $color-textoBotones;
+                background-color:nth($colores, 5);
+                color: nth($colores, 4);
             }
         }
     }

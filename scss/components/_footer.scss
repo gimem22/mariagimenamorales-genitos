@@ -1,43 +1,31 @@
 .pie{
-    background: $color-fondoHeaderFooterUno;
-    background: $color-fondoHeaderFooterDos;
+    background: nth($gradientes, 2);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    padding: 10px;
+    padding: nth($padding, 2);
     div{
-        padding: 15px;
+        padding: nth($padding, 3);
         h3{
-            font-size: 25px;
-            font-weight: 60px;
+            font-size: nth($font-size, 4);
+            font-weight: nth($font-weight, 3);
             text-align: center;
-            margin-bottom: 5px;
+            margin-bottom: nth($margin, 1);
         }
         p{
-            font-size: 15px;
+            font-size: nth($font-size, 2);
             text-align: left;
         }
-    }
-    div{
-        h3{
-
-        }
         iframe{
-            width: 160px;
-            height: 85px;
+            width: nth($width, 6);
+            height: nth($height, 8);
             text-align: center;
-        }
-
-    }
-    div{
-        h3{
-
         }
         a{
             img{
-                width: 80px;
-                height: 80px;
+                width: nth($width, 2);
+                height: nth($height, 7);
                 text-align: start;
                 transition: 2s;
                 &:hover{

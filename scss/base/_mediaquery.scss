@@ -1,37 +1,37 @@
 @media screen and (max-width:1000px) {
     .principal .bienvenida p {
-        font-size: 30px;
+        font-size: nth($font-size, 5);
     }
     .pie div h3 {
-        font-size: 20px;
+        font-size: nth($font-size, 3);
     }
 
     .pie div p {
-        font-size: 12px;
+        font-size: nth($font-size, 1);
     }
 
     .pie div iframe {
-        width: 130px;
-        height: 65px;
+        width: nth($width, 4);
+        height: nth($height, 5);
     }
 
     .pie div a img {
-        width: 60px;
-        height: 60px;
+        width: nth($width, 1);
+        height: nth($height, 4);
     }
 
     .contacto form div {
-        font-size: 20px;
+        font-size: nth($font-size, 3);
     }
 
     .contacto form div input {
-        width: 400px;
-        height: 40px;
+        width: nth($width, 12);
+        height: nth($height, 3);
     }
 
     .contacto form div textarea {
-        width: 550px;
-        height: 60px;
+        width: nth($width, 14);
+        height: nth($height, 4);
     }
 }
 
@@ -53,117 +53,117 @@
 
 @media screen and (max-width:800px) {
     .principal .bienvenida h1 {
-        font-size: 90px;
+        font-size: nth($font-size, 11);
         text-shadow: 0 0 3px;
     }
 
     .contacto form div textarea {
-        width: 500px;
+        width: nth($width, 13);
     }
 }
 
 @media screen and (max-width:700px) {
     .principal .galeria h2 {
-        font-size: 45px;
+        font-size: nth($font-size, 8);
     }
 
     .principal .categorias h2 {
-        font-size: 45px;
+        font-size: nth($font-size, 8);
     }
 
     .principal .categorias p {
-        font-size: 20px;
+        font-size: nth($font-size, 3);
     }
 
     .principal.pagos {
-        font-size: 45px;
+        font-size: nth($font-size, 8);
     }
 
     .principal .pagos p {
-        font-size: 20px;
+        font-size: nth($font-size, 3);
     }
 
     .contacto h2 {
-        font-size: 45px;
+        font-size: nth($font-size, 8);
     }
 
     .historia h2 {
-        font-size: 45px;
+        font-size: nth($font-size, 8);
     }
 
     .historia p {
-        font-size: 20px;
+        font-size: nth($font-size, 3);
     }
 
     .tienda h2 {
-        font-size: 45px;
+        font-size: nth($font-size, 8);
     }
 }
 
 @media screen and (max-width:600px) {
     .contacto form div {
-        font-size: 15px;
+        font-size: nth($font-size, 2);
     }
 
     .contacto form div input {
-        width: 300px;
-        height: 30px;
+        width: nth($width, 10);
+        height: nth($height, 2);
     }
 
     .contacto form div textarea {
-        width: 350px;
+        width: nth($width, 11);
     }
 }
 
 @media screen and (max-width:580px) {
 
     .pie div h3 {
-        font-size: 15px;
+        font-size: nth($font-size, 2);
     }
 
     .pie div iframe {
-        width: 110px;
+        width: nth($width, 3);
     }
 }
 
 @media screen and (max-width:500px) {
     .principal .bienvenida h1 {
-        font-size: 75px;
+        font-size: nth($font-size, 10);
         text-shadow: 0 0 2px;
     }
 
     .principal .bienvenida p {
-        font-size: 25px;
+        font-size: nth($font-size, 4);
     }
 
     .principal .galeria h2 {
-        font-size: 30px;
+        font-size: nth($font-size, 5);
     }
 
     .principal .categorias h2 {
-        font-size: 30px;
+        font-size: nth($font-size, 5);
     }
 
     .principal .pagos h2 {
-        font-size: 30px;
+        font-size: nth($font-size, 5);
     }
 
     .historia h2 {
-        font-size: 30px;
+        font-size: nth($font-size, 5);
     }
 
     .contacto h2{
-        font-size: 30px;
+        font-size: nth($font-size, 5);
     }
 
     .tienda h2 {
-        font-size: 30px;
+        font-size: nth($font-size, 5);
     }
 }
 
 @media screen and (max-width:400px) {
     .principal .bienvenida h1 {
-        font-size: 60px;
+        font-size: nth($font-size, 9);
         text-shadow: 0 0 2px;
     }
 
@@ -172,11 +172,11 @@
     }
 
     .contacto form div input {
-        width: 150px;
-        height: 20px;
+        width: nth($width, 5);
+        height: nth($height, 1);
     }
 
     .contacto form div textarea {
-        width: 250px;
+        width: nth($width, 9);
     }
 }

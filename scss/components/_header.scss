@@ -2,35 +2,48 @@
 
 .encabezado{
     nav{
-        background: $color-fondoHeaderFooterUno;
-        background: $color-fondoHeaderFooterDos;
-        div{
+        background: nth($gradientes, 2);
+        .container-fluid{
             a{
-                padding-right: 80px;
+                padding-right: nth($padding, 10);
                 img{
-                    width: 180px;
-                    height: 180px;
+                    width: nth($width, 7);
+                    height: nth($height, 10);
                 }
             }
-            div{
+            .collapse{
                 ul{
                     li{
-                        a{
-                            font-size: 10x; 
-                            color: $color-subtitulos;
-                            padding: 10px;
+                        .active{
+                            font-size: nth($font-size, 3);
+                            color: nth($colores, 1);
+                            padding-right: nth($padding, 3);
+                        }
+                    }
+                    li{
+                        .dropdown-toggle{
+                            font-size: nth($font-size, 3); 
+                            color: nth($colores, 1);
+                        }
+                        ul{
+                            li{
+                                .dropdown-item{
+                                    font-size: nth($font-size, 3); 
+                                    color: nth($colores, 1);
+                                }
+                            }
                         }
                     }
                 }
             }
                 form{
                     .boton{
-                        border: 1px solid $color-bordesBotones;
-                        color: $color-bordesBotones;
+                        border: 1px solid nth($colores, 3);
+                        color: nth($colores, 3);
                         transition: 1s;
                         &:hover{
-                            background-color: $color-bordesBotones;
-                            color: $color-textoBotones;
+                            background-color: nth($colores, 3);
+                            color: nth($colores, 4);
                         }
                     }
                 }
