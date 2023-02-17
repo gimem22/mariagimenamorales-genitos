@@ -26,11 +26,11 @@
 
 body {
   font-family: 'Playfair Display', serif;
-  width: 100%;
   background: linear-gradient(90deg, rgba(210, 189, 164, 0.591334) 8%, rgba(161, 137, 102, 0.395255) 97%), url("../img/bannerTres.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  background-position: center; }
 
 /*-----HEADER-----*/
 .encabezado nav {
@@ -431,6 +431,8 @@ body {
     font-size: 30px; } }
 
 @media screen and (max-width: 400px) {
+  .encabezado nav .container-fluid a img {
+    background-position: center; }
   .principal .bienvenida h1 {
     font-size: 60px;
     text-shadow: 0 0 2px; }
@@ -441,3 +443,16 @@ body {
     height: 20px; }
   .contacto form div textarea {
     width: 250px; } }
+
+@media screen and (max-width: 340px) {
+  .principal .bienvenida h1 {
+    font-size: 45px;
+    text-shadow: 0 0 2px; }
+  .principal .bienvenida p {
+    font-size: 20px; }
+  .principal .galeria h2 {
+    font-size: 25px; }
+  .principal .categorias h2 {
+    font-size: 25px; }
+  .principal .pagos h2 {
+    font-size: 25px; } }

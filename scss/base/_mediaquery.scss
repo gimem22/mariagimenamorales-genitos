@@ -38,6 +38,7 @@
 @media screen and (max-width:850px) {
     .encabezado {
         flex-direction: column;
+
     }
 
     .principal .galeria .grid-galeria {
@@ -162,6 +163,9 @@
 }
 
 @media screen and (max-width:400px) {
+    .encabezado nav .container-fluid a img {
+        background-position: center;
+    }
     .principal .bienvenida h1 {
         font-size: nth($font-size, 9);
         text-shadow: 0 0 2px;
@@ -180,3 +184,27 @@
         width: nth($width, 9);
     }
 }
+
+@media screen and (max-width:340px) {
+    .principal .bienvenida h1 {
+        font-size: nth($font-size, 8);
+        text-shadow: 0 0 2px;
+    }
+    .principal .bienvenida p {
+        font-size: nth($font-size, 3);
+    }
+    .principal .galeria h2 {
+        font-size: nth($font-size, 4);
+    }
+
+    .principal .categorias h2{
+        font-size: nth($font-size, 4);
+    }
+
+    .principal .pagos h2 {
+        font-size: nth($font-size, 4);
+    }
+}
+
+
+

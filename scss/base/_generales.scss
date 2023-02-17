@@ -9,10 +9,11 @@
 
 body {
     font-family: 'Playfair Display', serif;
-    width: nth($width, 16);
+    // width: nth($width, 16);
     background: nth($gradientes, 4), url("../img/bannerTres.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
 }
 
