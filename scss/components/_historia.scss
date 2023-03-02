@@ -3,13 +3,11 @@
     background: nth($gradientes, 4), url("../img/bannerTres.jpg");
     @include bgDos (no-repeat, cover, fixed);
     @extend %flex3;
-    h2{
+    h1 {
+        font-size: nth($font-size, 11); 
         color: nth($colores, 1);
         text-shadow: 0 0 4px nth($colores, 3);
-        font-size: nth($font-size, 11); 
-        font-weight: nth($font-weight, 4);
-        text-align: center;
-        padding: nth($padding, 6);
+        padding: nth($padding, 4);
     }
     p{
         color: nth($colores, 3);

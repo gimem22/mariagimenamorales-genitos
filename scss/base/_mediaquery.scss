@@ -35,10 +35,26 @@
     }
 }
 
+@media screen and (max-width:910px){
+    .categorias h1{
+        font-size: nth($font-size, 10); 
+    }
+
+    .contacto h1 {
+        font-size: nth($font-size, 10);
+    }
+
+    .historia h1 {
+        font-size: nth($font-size, 10);
+    }
+
+    .tienda h1 {
+        font-size: nth($font-size, 10);
+    }
+}
 @media screen and (max-width:850px) {
     .encabezado {
         flex-direction: column;
-
     }
 
     .principal .galeria .grid-galeria {
@@ -63,6 +79,24 @@
     }
 }
 
+@media screen and (max-width:770px) {
+    .categorias h1{
+        font-size: nth($font-size, 9); 
+    }
+
+    .contacto h1 {
+        font-size: nth($font-size, 9);
+    }
+
+    .historia h1 {
+        font-size: nth($font-size, 9);
+    }
+
+    .tienda h1 {
+        font-size: nth($font-size, 9);
+    }
+}
+
 @media screen and (max-width:700px) {
     .principal .galeria h2 {
         font-size: nth($font-size, 8);
@@ -76,28 +110,12 @@
         font-size: nth($font-size, 3);
     }
 
-    .principal.pagos {
+    .principal .pagos h2{
         font-size: nth($font-size, 8);
     }
 
     .principal .pagos p {
         font-size: nth($font-size, 3);
-    }
-
-    .contacto h2 {
-        font-size: nth($font-size, 8);
-    }
-
-    .historia h2 {
-        font-size: nth($font-size, 8);
-    }
-
-    .historia p {
-        font-size: nth($font-size, 3);
-    }
-
-    .tienda h2 {
-        font-size: nth($font-size, 8);
     }
 }
 
@@ -146,18 +164,6 @@
     }
 
     .principal .pagos h2 {
-        font-size: nth($font-size, 5);
-    }
-
-    .historia h2 {
-        font-size: nth($font-size, 5);
-    }
-
-    .contacto h2{
-        font-size: nth($font-size, 5);
-    }
-
-    .tienda h2 {
         font-size: nth($font-size, 5);
     }
 }

@@ -1,0 +1,71 @@
+.categorias {
+    width: nth($width, 16);
+    background: nth($gradientes, 4), url("../img/bannerTres.jpg");
+    @include bgDos (no-repeat, cover, fixed);
+    @extend %flex3;
+    h1 {
+        font-size: nth($font-size, 11); 
+        color: nth($colores, 1);
+        text-shadow: 0 0 4px nth($colores, 3);
+        padding: nth($padding, 4);
+    }
+    p {
+        color: nth($colores, 3);
+        font-size: nth($font-size, 4); 
+        font-weight: nth($font-weight, 2);
+        text-align: center;
+        padding: nth($padding, 5);
+    }
+    .catTipos {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        div {
+            border: 2px solid nth($colores, 3);
+            width: nth($width, 8);
+            height: nth($height, 11);
+            margin: nth($margin, 6);
+            padding: nth($padding, 2);
+            text-align: center;
+            img {
+                width: nth($width, 5);
+                height: nth($height, 9);
+                transition-property: width;
+                transition-duration: 2s;
+                transition-timing-function: ease;
+                &:hover{
+                    width: nth($width, 7);
+                }
+            }
+            h3 {
+                font-size: nth($font-size, 2); 
+                margin: nth($margin, 2);
+            }
+            a {
+                text-decoration: none;
+                font-size: nth($font-size, 1); 
+                color: nth($colores, 4);
+                font-weight: nth($font-weight, 5);
+                background-color: nth($colores, 5);
+                padding-top: nth($padding, 1);
+                padding-bottom: nth($padding, 1);
+                padding-left: nth($padding, 2);
+                padding-right: nth($padding, 2);
+            }
+        }
+    }
+        a {
+            text-decoration: none;
+            font-size: nth($font-size, 3); 
+            border: 1px solid nth($colores, 3);
+            color: nth($colores, 3);
+            margin: nth($margin, 3);
+            padding-bottom: nth($padding, 2);
+            padding: nth($padding, 1);
+            transition: 3s;
+            &:hover{
+                background-color:nth($colores, 5);
+                color: nth($colores, 4);
+            }
+        }
+    }

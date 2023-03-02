@@ -12,7 +12,7 @@
   justify-content: center;
   align-items: center; }
 
-.tienda, .historia, .contacto {
+.tienda, .categorias, .historia, .contacto {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -61,7 +61,7 @@ body {
 .principal .bienvenida {
   width: 100%;
   height: calc(100vh - 180px);
-  background: linear-gradient(rgba(174, 149, 120, 0.486), rgba(125, 120, 114, 0.596)), url("../img/tazaCafe.jpg");
+  background: linear-gradient(rgba(174, 149, 120, 0.486), rgba(125, 120, 114, 0.596)), url("../img/vasoRosa.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -76,12 +76,12 @@ body {
     color: #482c17; }
 
 .principal .galeria h2 {
-  font-size: 60px;
-  font-weight: 150px;
   color: #9b771b;
   background-color: #d2bfa4;
+  font-size: 60px;
+  font-weight: 150px;
   text-align: center;
-  padding: 50px; }
+  padding: 30px; }
 
 .principal .galeria .grid-galeria {
   display: grid;
@@ -225,13 +225,11 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed; }
-  .tienda h2 {
+  .tienda h1 {
+    font-size: 90px;
     color: #9b771b;
     text-shadow: 0 0 4px #482c17;
-    font-size: 90px;
-    font-weight: 150px;
-    text-align: center;
-    padding: 35px; }
+    padding: 20px; }
   .tienda .productosTienda {
     display: flex;
     justify-content: space-evenly;
@@ -261,19 +259,79 @@ body {
         padding-left: 10px;
         padding-right: 10px; }
 
+.categorias {
+  width: 100%;
+  background: linear-gradient(90deg, rgba(210, 189, 164, 0.591334) 8%, rgba(161, 137, 102, 0.395255) 97%), url("../img/bannerTres.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+  .categorias h1 {
+    font-size: 90px;
+    color: #9b771b;
+    text-shadow: 0 0 4px #482c17;
+    padding: 20px; }
+  .categorias p {
+    color: #482c17;
+    font-size: 25px;
+    font-weight: 50px;
+    text-align: center;
+    padding: 30px; }
+  .categorias .catTipos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; }
+    .categorias .catTipos div {
+      border: 2px solid #482c17;
+      width: 200px;
+      height: 250px;
+      margin: 40px;
+      padding: 10px;
+      text-align: center; }
+      .categorias .catTipos div img {
+        width: 150px;
+        height: 150px;
+        transition-property: width;
+        transition-duration: 2s;
+        transition-timing-function: ease; }
+        .categorias .catTipos div img:hover {
+          width: 180px; }
+      .categorias .catTipos div h3 {
+        font-size: 15px;
+        margin: 15px; }
+      .categorias .catTipos div a {
+        text-decoration: none;
+        font-size: 12px;
+        color: beige;
+        font-weight: bold;
+        background-color: #633a57;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px; }
+  .categorias a {
+    text-decoration: none;
+    font-size: 20px;
+    border: 1px solid #482c17;
+    color: #482c17;
+    margin: 20px;
+    padding-bottom: 10px;
+    padding: 5px;
+    transition: 3s; }
+    .categorias a:hover {
+      background-color: #633a57;
+      color: beige; }
+
 .historia {
   width: 100%;
   background: linear-gradient(90deg, rgba(210, 189, 164, 0.591334) 8%, rgba(161, 137, 102, 0.395255) 97%), url("../img/bannerTres.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed; }
-  .historia h2 {
+  .historia h1 {
+    font-size: 90px;
     color: #9b771b;
     text-shadow: 0 0 4px #482c17;
-    font-size: 90px;
-    font-weight: 150px;
-    text-align: center;
-    padding: 35px; }
+    padding: 20px; }
   .historia p {
     color: #482c17;
     font-size: 25px;
@@ -287,13 +345,11 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed; }
-  .contacto h2 {
+  .contacto h1 {
+    font-size: 90px;
     color: #9b771b;
     text-shadow: 0 0 4px #482c17;
-    font-size: 90px;
-    font-weight: 150px;
-    text-align: center;
-    padding: 35px; }
+    padding: 20px; }
   .contacto div {
     font-size: 20px;
     font-weight: 30px;
@@ -359,6 +415,16 @@ body {
     width: 550px;
     height: 60px; } }
 
+@media screen and (max-width: 910px) {
+  .categorias h1 {
+    font-size: 75px; }
+  .contacto h1 {
+    font-size: 75px; }
+  .historia h1 {
+    font-size: 75px; }
+  .tienda h1 {
+    font-size: 75px; } }
+
 @media screen and (max-width: 850px) {
   .encabezado {
     flex-direction: column; }
@@ -376,6 +442,16 @@ body {
   .contacto form div textarea {
     width: 500px; } }
 
+@media screen and (max-width: 770px) {
+  .categorias h1 {
+    font-size: 60px; }
+  .contacto h1 {
+    font-size: 60px; }
+  .historia h1 {
+    font-size: 60px; }
+  .tienda h1 {
+    font-size: 60px; } }
+
 @media screen and (max-width: 700px) {
   .principal .galeria h2 {
     font-size: 45px; }
@@ -383,18 +459,10 @@ body {
     font-size: 45px; }
   .principal .categorias p {
     font-size: 20px; }
-  .principal.pagos {
+  .principal .pagos h2 {
     font-size: 45px; }
   .principal .pagos p {
-    font-size: 20px; }
-  .contacto h2 {
-    font-size: 45px; }
-  .historia h2 {
-    font-size: 45px; }
-  .historia p {
-    font-size: 20px; }
-  .tienda h2 {
-    font-size: 45px; } }
+    font-size: 20px; } }
 
 @media screen and (max-width: 600px) {
   .contacto form div {
@@ -422,12 +490,6 @@ body {
   .principal .categorias h2 {
     font-size: 30px; }
   .principal .pagos h2 {
-    font-size: 30px; }
-  .historia h2 {
-    font-size: 30px; }
-  .contacto h2 {
-    font-size: 30px; }
-  .tienda h2 {
     font-size: 30px; } }
 
 @media screen and (max-width: 400px) {

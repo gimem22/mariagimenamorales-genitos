@@ -2,7 +2,7 @@
     .bienvenida {
         width: nth($width, 16);
         height: calc(100vh - 180px);
-        background: nth($gradientes, 3), url("../img/tazaCafe.jpg");
+        background: nth($gradientes, 3), url("../img/vasoRosa.jpg");
         @include bg (center, no-repeat, cover, fixed);
         @extend %flex;
 
@@ -21,12 +21,12 @@
     .galeria {
 
         h2 {
-            font-size: nth($font-size, 9); 
-            font-weight: nth($font-weight, 4);
             color: nth($colores, 1);
             background-color: nth($colores, 2);
+            font-size: nth($font-size, 9); 
+            font-weight: nth($font-weight, 4);
             text-align: center;
-            padding: nth($padding, 7);
+            padding: nth($padding, 5)
         }
 
         .grid-galeria {
@@ -89,7 +89,7 @@
             font-size: nth($font-size, 9); 
             font-weight: nth($font-weight, 4);
             text-align: center;
-            padding: nth($padding, 5);
+            padding: nth($padding, 5)
         }
 
         p {
@@ -163,7 +163,7 @@
             font-size: nth($font-size, 9); 
             font-weight: nth($font-weight, 4);
             text-align: center;
-            padding: nth($padding, 5);
+            padding: nth($padding, 5)
         }
 
         p {
