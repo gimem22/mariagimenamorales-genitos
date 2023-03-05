@@ -26,8 +26,12 @@
             }
         }
         div{
+            h3{
+                color: nth($colores, 3);
+                font-size: nth($font-size, 3); 
+            }
             textarea{
-                width: nth($width, 15);
+                width: nth($width, 12);
                 height: nth($height, 6);
             }
         }
