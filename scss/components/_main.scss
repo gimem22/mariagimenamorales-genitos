@@ -1,7 +1,7 @@
 .principal {
     .bienvenida {
         width: nth($width, 16);
-        height: calc(100vh - 180px);
+        height: calc(100vh - 160px);
         background: nth($gradientes, 3), url("../img/vasoRosa.jpg");
         @include bg (center, no-repeat, cover, fixed);
         @extend %flex;

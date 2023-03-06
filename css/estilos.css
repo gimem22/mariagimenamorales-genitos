@@ -38,8 +38,8 @@ body {
   .encabezado nav .container-fluid a {
     padding-right: 100px; }
     .encabezado nav .container-fluid a img {
-      width: 180px;
-      height: 180px; }
+      width: 200px;
+      height: 150px; }
   .encabezado nav .container-fluid .collapse ul li .active {
     font-size: 20px;
     color: #9b771b;
@@ -60,7 +60,7 @@ body {
 
 .principal .bienvenida {
   width: 100%;
-  height: calc(100vh - 180px);
+  height: calc(100vh - 160px);
   background: linear-gradient(rgba(174, 149, 120, 0.486), rgba(125, 120, 114, 0.596)), url("../img/vasoRosa.jpg");
   background-position: center;
   background-repeat: no-repeat;
